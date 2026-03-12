@@ -3,4 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "Build started"
+      - echo Build started on `date`
+      - mvn --quiet install
+artifacts:
+  files:
+    - target/messageUtil-1.0.jar
